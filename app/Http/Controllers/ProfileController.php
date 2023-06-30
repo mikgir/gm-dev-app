@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProfileUpdateRequest;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Foundation\Application;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -12,7 +14,21 @@ use Illuminate\View\View;
 class ProfileController extends Controller
 {
     /**
+     * @return Factory|Application|View
+     */
+    public function index(): Factory|Application|View
+    {
+        $user = auth()->user();
+
+        return view('profile.index', [
+            'user' => $user
+        ]);
+    }
+
+    /**
      * Display the user's profile form.
+     * @param Request $request
+     * @return View
      */
     public function edit(Request $request): View
     {

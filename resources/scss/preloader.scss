@@ -1,0 +1,121 @@
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(30, 37, 43);
+}
+
+  .preloader__back {
+    font-family: 'handwriting-draft', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 5rem;
+    line-height: 100px;
+    color: #fff;
+    opacity: 0;
+    transform: translateX(1%);
+    transition: opacity 0.3s ease-in-out;
+    -webkit-animation: preloader 15s linear;
+    animation: preloader 15s linear;
+}
+
+  .preloader__forward {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-family: 'handwriting-draft', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 50px;
+    color: rgb(30, 37, 43);
+    transform: translate(-50%, -20%);
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.770, 0.125, 0.265, 1.040), transform 0.3s cubic-bezier(0.770, 0.125, 0.265, 1.040);
+}
+
+  .preloader__background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 440px;
+    height: 120px;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+  .preloader__background::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 25px;
+    background: linear-gradient(145deg, #ff7633, #e6632b);
+    box-shadow:  -46px 46px 92px #0c0f11,
+    46px -46px 92px #303b45;
+    transition: width 0.7s cubic-bezier(0.770, 0.125, 0.265, 1.040);
+}
+
+  @-webkit-keyframes preloader {
+  0% {
+  transform: translateX(50%);
+}
+  100% {
+  transform: translateX(-100%);
+}
+}
+
+  @keyframes preloader {
+  0% {
+  transform: translateX(50%);
+}
+  100% {
+  transform: translateX(-100%);
+}
+}
+
+  .preloader-animation .preloader__back {
+    opacity: 0.15;
+}
+
+  .preloader-animation .preloader__forward {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+  .preloader-animation .preloader__background::before {
+    transition-delay: 0.5s;
+    width: 440px;
+}
+
+  .preloader-hidden .preloader__back {
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.770, 0.125, 0.265, 1.040), transform 0.3s cubic-bezier(0.770, 0.125, 0.265, 1.040);
+}
+
+  .preloader-hidden .preloader__background::before {
+    width: 0;
+}
+
+  .preloader-hidden .preloader__forward {
+    opacity: 0;
+    transition-delay: 0.5s;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease-in-out;
+}
+
+  .preloader-none {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}

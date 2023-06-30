@@ -1,11 +1,25 @@
 {
-  "resources/css/app.css": {
-    "file": "assets/app-49a0a1d1.css",
-    "isEntry": true,
-    "src": "resources/css/app.css"
+  "resources/assets/fonts/JosefinSans-Regular.ttf": {
+    "file": "assets/JosefinSans-Regular-31ed94e5.ttf",
+    "src": "resources/assets/fonts/JosefinSans-Regular.ttf"
+  },
+  "resources/assets/fonts/ReenieBeanie-Regular.ttf": {
+    "file": "assets/ReenieBeanie-Regular-0dd017e5.ttf",
+    "src": "resources/assets/fonts/ReenieBeanie-Regular.ttf"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-d0ce0124.css",
+    "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
-    "file": "assets/app-6870bb4e.js",
+    "assets": [
+      "assets/ReenieBeanie-Regular-0dd017e5.ttf",
+      "assets/JosefinSans-Regular-31ed94e5.ttf"
+    ],
+    "css": [
+      "assets/app-d0ce0124.css"
+    ],
+    "file": "assets/app-a1aa22be.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
