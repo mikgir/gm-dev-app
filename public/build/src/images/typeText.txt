@@ -1,0 +1,37 @@
+function writeTextByJS(id, text, speed){
+
+    const ele = document.getElementById(id),
+        txt = text.join("").split("");
+
+    let interval = setInterval(function(){
+
+        if(!txt[0]){
+            return clearInterval(interval);
+        }
+
+        ele.innerHTML += txt.shift();
+
+    }, speed != undefined ? speed : 100);
+
+    return false;
+}
+
+writeTextByJS(
+    "text-css",
+    [
+        "My { \n",
+             "first name: Mikhail\n",
+             "second name: Groshev\n",
+             "birth date: 28.12.68\n",
+             "country: Russia\n",
+        "}\n",
+
+        ".about { \n",
+            "education: higher\n",
+            "previous employment: own business\n",
+            "marital status: married\n",
+            "hobbies: photography\n",
+        "         music\n",
+        "}\n",
+    ]
+);
