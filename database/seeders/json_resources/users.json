@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Mike",
+        "email": "admin@gmdev.com",
+        "password": "12345678"
+    },
+    {
+        "id": 2,
+        "name": "Дарья",
+        "email": "moderator@gmdev.com",
+        "password": "12345678"
+    },
+    {
+        "id": 3,
+        "name": "Федор",
+        "email": "castomer@gmdev.com",
+        "password": "12345678"
+    },
+    {
+        "id": 4,
+        "name": "Кристина",
+        "email": "user1@gmdev.com",
+        "password": "12345678"
+    },
+    {
+        "id": 5,
+        "name": "Александр",
+        "email": "user2@gmdev.com",
+        "password": "12345678"
+    }
+]

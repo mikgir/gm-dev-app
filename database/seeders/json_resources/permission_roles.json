@@ -1,0 +1,49 @@
+{
+    "admin": {
+        "users": [
+            "block",
+            "unblock"
+        ],
+
+        "projects": [
+            "show",
+            "create",
+            "edit",
+            "delete"
+        ],
+        "orders": [
+            "show",
+            "create",
+            "edit",
+            "delete"
+        ],
+        "comments": [
+            "show",
+            "block",
+            "delete"
+        ]
+    },
+    "customer": {
+        "orders": [
+            "show",
+            "create",
+            "edit",
+            "delete"
+        ]
+    },
+    "user": {
+        "profile": [
+            "show",
+            "create",
+            "edit",
+            "delete"
+        ],
+        "comments": [
+            "show",
+            "create",
+            "edit",
+            "delete"
+        ]
+    }
+}
+

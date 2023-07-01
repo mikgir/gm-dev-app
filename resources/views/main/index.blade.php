@@ -10,7 +10,7 @@
         <section class="main-section container fillViewport" id="sectionHero">
             <div class="header-content">
                 <div class="main-heading">
-                    <img src="{{ asset('build/src/images/myPhoto450.png') }}" alt="my-photo"
+                    <img src="{{ asset('build/src/images/myphoto.png') }}" alt="my-photo"
                          class="main-heading__img animate-el heroImg">
                     <h2 class="header-content__heading heroText">Hello world!</h2>
                     <p class="content__sub-text subText"></p>
