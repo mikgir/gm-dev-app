@@ -12,7 +12,8 @@
         "laravel/tinker": "^2.8",
         "moonshine/moonshine": "^1.59",
         "spatie/laravel-medialibrary": "^10.0.0",
-        "spatie/laravel-permission": "^5.10"
+        "spatie/laravel-permission": "^5.10",
+        "visual-ideas/moonshine-spatie-medialibrary": "^1.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

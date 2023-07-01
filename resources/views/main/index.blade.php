@@ -208,7 +208,7 @@
                         <div class="link__image">
                             <img src="{{ asset('build/src/images/site-img.png') }}" alt="" style="width: 100%; height: 100%">
                         </div>
-                        <a href="#" class="works__link"></a>
+                        <a href="{{route('projects')}}" class="works__link"></a>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,11 @@
                 <h2 class="heading__title">Profile <span class="title__accent">{{$user->name}}</span></h2>
             </div>
             <div class="about__content content">
-              Welcome {{$user->name}}!
+                <div class="col-6">
+                    {{$user->getFirstMedia('avatars')}}
+                </div>
+                <h3 class="text-center">Welcome {{$user->name}}!</h3>
+
             </div>
         </article>
     </section>

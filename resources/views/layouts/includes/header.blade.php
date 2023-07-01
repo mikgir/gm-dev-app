@@ -10,7 +10,7 @@
                 <a href="{{route('main')}}" class="item__link">HOME</a>
             </li>
             <li class="menu__item link2">
-                <a href="#" class="item__link">PORTFOLIO</a>
+                <a href="{{route('projects')}}" class="item__link">PORTFOLIO</a>
             </li>
             <li class="menu__item link3">
                 <a href="#" class="item__link">BLOG</a>
