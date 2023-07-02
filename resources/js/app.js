@@ -1,7 +1,6 @@
 import './bootstrap';
 import 'bootstrap/scss/bootstrap.scss';
-// import 'owl.carousel/dist/assets/owl.carousel.min.css';
-// import 'owl.carousel/dist/assets/owl.theme.default.min.css'
+import '@fortawesome/fontawesome-free';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import '../scss/main.scss';

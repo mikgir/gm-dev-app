@@ -61,7 +61,7 @@ class Post extends Model implements HasMedia
      */
     public function registerMediaConversions(Media $media = null): void
     {
-        $this->addMediaConversion('cover')
+        $this->addMediaConversion('p_image')
             ->width(820)
             ->height(440);
         $this

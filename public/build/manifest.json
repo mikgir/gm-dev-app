@@ -8,7 +8,7 @@
     "src": "resources/assets/fonts/ReenieBeanie-Regular.ttf"
   },
   "resources/js/app.css": {
-    "file": "assets/app-d0ce0124.css",
+    "file": "assets/app-d72f760f.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
@@ -17,9 +17,9 @@
       "assets/JosefinSans-Regular-31ed94e5.ttf"
     ],
     "css": [
-      "assets/app-d0ce0124.css"
+      "assets/app-d72f760f.css"
     ],
-    "file": "assets/app-6d325c22.js",
+    "file": "assets/app-0b2d7473.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

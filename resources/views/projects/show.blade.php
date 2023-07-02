@@ -12,7 +12,7 @@
                 <div class="contact__heading ">
                     <h2 class="heading__title">Project <span class="title__accent">{{$project->title}}</span> </h2>
                 </div>
-                <div class="container">
+                <div class="container mb-5">
                     <div class="section__box works_box">
                         <div class="mockup w-75 h-75">
                                 <img src="{{ asset('build/src/images/macFront.png') }}" alt="" class="mockup__img">
@@ -24,13 +24,19 @@
                 </div>
             </div>
         </section>
-        <section class="main-section fillViewport">
+        <section class="container-fluid paralax mt-5">
             <div class="container">
-                <p class="text-center w-50 mx-auto my-3">{!! $project->description !!}</p>
-                <div class="row justify-content-center w-100">
-                    <div class="col-8">
-                        <a href="#" class=""><i class="fab fa-github"></i></a>
-                        <a href="#" class=""><i class="fa fa-browser"></i></a>
+                <div class="row">
+                    <div class="col-11 mx-auto mt-5">
+                        {!! $project->description !!}
+                    </div>
+                    <div class="row justify-content-between w-100">
+                        <div class="col-6 text-center">
+                            <a href="{{$project->web_link}}" target="_blank" class="">See web site <i class="far fa-newspaper"></i></a>
+                        </div>
+                        <div class="col-6 text-center">
+                            <a href="{{$project->git_link}}" target="_blank" class="">See on GitHub <i class="far fa-newspaper"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>

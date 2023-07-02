@@ -7,7 +7,7 @@
         </p>
     </div>
     <main>
-        <section class="main-section container fillViewport" id="sectionHero">
+        <section class="main-section container hero fillViewport" id="sectionHero">
             <div class="header-content">
                 <div class="main-heading">
                     <img src="{{ asset('build/src/images/myphoto.png') }}" alt="my-photo"
@@ -175,28 +175,28 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid paralax" id="sectionExperience"
+        <div class="container-fluid paralax" id="sectionExperience"
                  style="background-image: url({{ asset('build/src/images/bg-maxresdefault.jpg') }})">
             <div class="experience">
                 <div class="container experience__items experience1">
                     <div class="col-lg-3 experience__item">
-                        <i class="fa fa-book"></i>
+                        <i class="fas fa-book"></i>
                         <h4 class="text-center">front-end</h4>
                         <p class="text-center">Lorem ipsum dolor sit amet.</p>
                     </div>
                     <div class="col-lg-3 experience__item experience2">
-                        <i class="fa fa-book"></i>
+                        <i class="fas fa-book"></i>
                         <h4 class="text-center">front-end</h4>
                         <p class="text-center">Lorem ipsum dolor sit amet.</p>
                     </div>
                     <div class="col-lg-3 experience__item experience3">
-                        <i class="fa fa-book"></i>
+                        <i class="fas fa-book"></i>
                         <h4 class="text-center">front-end</h4>
                         <p class="text-center">Lorem ipsum dolor sit amet.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="works mt-lg-5" id="sectionWorks">
             <div class="works__heading worksHeading">
                 <h2 class="heading__title">My <span class="title__accent">Works</span></h2>
@@ -213,7 +213,7 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid paralax mt-lg-5"
+        <div class="container-fluid paralax mt-lg-5"
                  style="background-image: url({{ asset('build/src/images/scaled.jpg') }})">
             <div class="slider__heading sliderHeading">
                 <h2 class="heading__title">Friends says</h2>
@@ -269,7 +269,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="contact mt-lg-5" id="sectionContact">
             <div class="contact__heading contactHeading">
                 <h2 class="heading__title">Contact <span class="title__accent">Me</span></h2>
@@ -280,17 +280,17 @@
                         <p class="text-center">If you are interested in what I am doing,<br> send me a message, I will definitely<br> contact you.</p>
                         <div class="contact__links col-lg-8">
                             <ul class="address__list">
-                                <li class="list__item"><i class="fa fa-home"></i> 53.Radio st.</li>
-                                <li class="list__item"><i class="fa fa-city"></i> Noginsk</li>
-                                <li class="list__item"><i class="fa fa-location"></i> Russia</li>
+                                <li class="list__item"><i class="fas fa-home accent"></i> 53.Radio st.</li>
+                                <li class="list__item"><i class="fas fa-city accent"></i> Noginsk</li>
+                                <li class="list__item"><i class="fas fa-location accent"></i> Russia</li>
                             </ul>
                             <ul class="address__links">
-                                <li class="links__item"><i class="fa fa-envelope"></i><a
+                                <li class="links__item"><i class="fas fa-envelope accent"></i><a
                                         href="mailto:mikgir@yandex.ru?subject=Message from visitor">
                                         mikgir@yandex.ru</a></li>
-                                <li class="links__item"><i class="fa fa-phone"></i><a href="tel:+79771445990">
+                                <li class="links__item"><i class="fas fa-phone accent"></i><a href="tel:+79771445990">
                                         +7(977)144-59-90</a></li>
-                                <li class="links__item"><i class="fa fa-image"></i><a href="#" target="_blank"> www.gm-dev.ru</a>
+                                <li class="links__item"><i class="fas fa-image accent"></i><a href="#" target="_blank"> www.gm-dev.ru</a>
                                 </li>
                             </ul>
                         </div>

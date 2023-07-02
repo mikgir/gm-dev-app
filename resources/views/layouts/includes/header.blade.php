@@ -24,7 +24,7 @@
                             <li class="menu__item link5 d-flex">
                                 <a class="item__link"
                                    href="{{route('profile.show')}}" title="Profile">
-                                    <i class="fa fa-user"></i>
+                                    <i class="fa fa-user" style="font-size: 1rem"></i>
                                 </a>
                             </li>
                             <li class="menu__item link5 d-flex">

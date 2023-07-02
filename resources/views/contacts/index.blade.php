@@ -27,7 +27,7 @@
                         <ul class="list-unstyled list-info">
                             <li>
                                 <div class="media align-items-center">
-                                    <span class="info-icon"><i class="fa fa-map-location accent"></i></span>
+                                    <span class="info-icon"><i class="fas fa-location accent"></i></span>
                                     <div class="media-body info-details">
                                         <h6 class="utf-info-type">Location</h6>
                                         <span class="utf-info-value">53, Radio st. Noginsk, Russia</span>
@@ -36,7 +36,7 @@
                             </li>
                             <li>
                                 <div class="media align-items-center">
-                                    <span class="info-icon"><i class="fa fa-phone accent"></i></span>
+                                    <span class="info-icon"><i class="fas fa-phone accent"></i></span>
                                     <div class="media-body info-details">
                                         <h6 class="utf-info-type">Phone Number</h6>
                                         <span class="utf-info-value"><a
@@ -46,7 +46,7 @@
                             </li>
                             <li>
                                 <div class="media align-items-center">
-                                    <span class="info-icon"><i class="fa fa-envelope accent"></i></span>
+                                    <span class="info-icon"><i class="far fa-envelope accent"></i></span>
                                     <div class="media-body info-details">
                                         <h6 class="utf-info-type">Email Address</h6>
                                         <span class="utf-info-value"><a href="mailto:info@example.com">mikgir@yandex.ru</a></span>
@@ -55,7 +55,7 @@
                             </li>
                             <li>
                                 <div class="media align-items-center">
-                                    <span class="info-icon"><i class="fa fa-image accent"></i></span>
+                                    <span class="info-icon"><i class="far fa-image accent"></i></span>
                                     <div class="media-body info-details">
                                         <h6 class="utf-info-type">Website</h6>
                                         <span class="utf-info-value"><a href="#">www.gm-dev.ru</a></span>
