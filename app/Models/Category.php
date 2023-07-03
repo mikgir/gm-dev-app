@@ -14,6 +14,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property int $id
  * @property int $order
  * @property string $name
+ * @property string $description
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $deleted_at
@@ -34,7 +35,8 @@ class Category extends Model
 
     protected $fillable = [
         'order',
-        'name'
+        'name',
+        'description'
     ];
 
     public function projects(): HasMany

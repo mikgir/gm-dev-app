@@ -299,16 +299,17 @@
                         <div class="contact__heading contactHeading">
                             <h4 class="heading__title" style="font-size: 2.5rem">Send me your message</h4>
                         </div>
-                        <form method="post" action="#" class="form-group contact__form">
-                            @csrf
-                            <label for="name">Name</label><input type="text" name="name" id="name"
-                                                                 class="form-control">
-                            <label for="email">Email</label><input type="email" name="email" id="email"
-                                                                   class="form-control">
-                            <label for="text">Message</label><textarea name="text" id="text" cols="30" rows="1"
-                                                                       class="form-control"></textarea>
-                            <a href="" type="submit" class="btn btn-outline-secondary custom__btn clay">Send</a>
-                        </form>
+                        <a href="{{route('contact')}}" type="submit" class="btn btn-outline-secondary custom__btn clay">Send</a>
+
+{{--                        <form method="post" action="#" class="form-group contact__form">--}}
+{{--                            @csrf--}}
+{{--                            <label for="name">Name</label><input type="text" name="name" id="name"--}}
+{{--                                                                 class="form-control">--}}
+{{--                            <label for="email">Email</label><input type="email" name="email" id="email"--}}
+{{--                                                                   class="form-control">--}}
+{{--                            <label for="text">Message</label><textarea name="text" id="text" cols="30" rows="1"--}}
+{{--                                                                       class="form-control"></textarea>--}}
+{{--                        </form>--}}
                     </div>
                 </div>
             </div>

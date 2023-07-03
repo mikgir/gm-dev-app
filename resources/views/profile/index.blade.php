@@ -15,11 +15,14 @@
                     <p class="text-center w-50 mx-auto my-3">Here you can fill in and change your personal details, place an order and leave your feedback.</p>
                 </div>
                 <div class="container">
-                        <div class="section__box works_box mb-5 p-3" style="min-height: 150vh">
-                            <div class="col-4">
-                                    <div class="item__img" style="width: 120px; height: 120px; border-radius: 100%; overflow: hidden; margin-top: -6rem">
-                                        <img src="{{$user->getFirstMediaUrl('avatars', 'thumb')}}" alt="avatar" style="width: 100%; height: 100%">
-                                    </div>
+                        <div class="section__box works_box mb-5" style="min-height: 150vh">
+                            <div class="row w-100 mt-5">
+                                <div class="item__img" style="width: 10rem; height: 10rem; margin-top: -5rem; margin-left: 2rem">
+                                    <img src="{{$user->getFirstMediaUrl('avatars', 'thumb')}}" alt="avatar" style="width: 100%; height: auto; border-radius: 100%;">
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-between px-5">
+                                <div class="col-4">
                                     <div class="">
                                         @include('profile.partials.update-profile-information-form')
 
@@ -32,18 +35,25 @@
                                         @include('profile.partials.delete-user-form')
                                     </div>
                                 </div>
-                            <div class="col-7">
-{{--                                <div>--}}
-{{--                                    <div class="card-header__wp4">Личная информация</div>--}}
-{{--                                    <div class="card-body">--}}
-{{--                                        @if(isset($user->profile))--}}
-{{--                                            @include('profile.edit', ['profile' => $user->profile])--}}
-{{--                                        @else--}}
-{{--                                            @include('profile.create', ['profile' => $user->profile])--}}
-{{--                                        @endif--}}
-{{--                                    </div>--}}
-{{--                                </div>--}}
+                                <div class="col-7">
+                                    <div class="">
+                                        <h2 class="">
+                                            {{ __('Personal Information') }}
+                                        </h2>
+                                        <p class="">
+                                            {{ __("Update your personal data - first name, last name, date of birth, city, country, phone number.") }}
+
+                                        </p>
+                                        <div class="">
+                                            @if(isset($user->profile))
+                                                @include('profile.edit', ['profile' => $user->profile])
+                                            @else
+                                                @include('profile.create', ['profile' => $user->profile])
+                                            @endif
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
                         </div>
 
                 </div>

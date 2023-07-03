@@ -42,7 +42,7 @@ const tlScrolling5 = gsap.timeline({scrollTrigger: {
     }});
 import { startAnimation, aboutAnimation,
     skillsAnimation, worksAnimation,
-    contactsAnimation, experienceAnimation } from '../assets/js/gsapAnimation.js'
+    contactsAnimation, experienceAnimation } from './gsapAnimation.js'
 
 
 window.onload = function () {
@@ -52,7 +52,7 @@ window.onload = function () {
     setTimeout(() => {
         preloader.classList.remove('preloader-animation');
         preloader.classList.add('preloader-hidden');
-    }, 3000);
+    }, 2500);
     setTimeout(() => {
         preloader.classList.add('preloader-none');
         startAnimation(tl);
@@ -61,7 +61,7 @@ window.onload = function () {
         worksAnimation(tlScrolling3);
         experienceAnimation(tlScrolling4);
         contactsAnimation(tlScrolling5);
-    }, 3200);
+    }, 2700);
 };
 
 

@@ -18,12 +18,12 @@
                 <div class="section__box contact__box">
                     <div class="row row-cols-2"></div>
                     <div class="contact__text col-lg-8 mt-lg-5">
-                        <p class="text-center" style="font-size: 1.5rem">Don't you have an account on the site yet? <br> You can register
+                        <p class="text-center" style="font-size: 1rem">Don't you have an account on the site yet? You can register
                             <a href="{{ route('register') }}" class="item__link" style="border-bottom: 2px solid #FF6E30;">here</a>.</p>
-                        <p class="text-center" style="font-size: 1.5rem">You can log in via <br>social networks.</p>
-                        <div class="text-center" style="font-size: 2rem">
-                            <a href="#"><i class="fa fa-vk"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
+                        <p class="text-center" style="font-size: 1rem">You can log in via social networks.</p>
+                        <div class="text-center" style="font-size: 1.5rem">
+                            <a href="#"><i class="fab fa-vk"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-8">

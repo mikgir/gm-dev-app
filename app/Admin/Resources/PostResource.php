@@ -23,8 +23,8 @@ class PostResource extends Resource
 {
 	public static string $model = Post::class;
 	public static string $title = 'Посты';
-    public static string $subTitle = 'Управление постами';
-    public string $titleField = 'title';
+    public static string $subTitle='Управление постами';
+    public  string $titleField = 'title';
     public static int $itemsPerPage = 3;
 
 	public function fields(): array
@@ -34,13 +34,27 @@ class PostResource extends Resource
             Grid::make([
                 Column::make([
                     Block::make('Информация', [
-                        MediaLibrary::make('Изображение', 'post_cover')
-                            ->removable(),
                         BelongsTo::make('Автор', 'user_id', 'name')
                             ->searchable()
                             ->sortable(),
                         Text::make('Заголовок', 'title'),
-                        TinyMce::make('Текст', 'body')
+                        Enum::make('Статус', 'status')->attach(StatusEnum::class),
+                        Date::make('Дата создания', 'created_at')
+                            ->format('y.m.d')
+                            ->sortable(),
+                        Date::make('Дата изменения', 'updated_at')
+                            ->format('y.m.d')
+                            ->sortable()
+                            ->hideOnIndex()
+
+                    ])
+                ])->columnSpan(6),
+                Column::make([
+                    Block::make('Содержание', [
+                        MediaLibrary::make('Медиа', 'p-image')
+                            ->multiple()
+                            ->removable(),
+                        TinyMce::make('Содержание', 'body')
                             // Переопределить набор плагинов
                             ->plugins('anchor autoresize image link fullscreen preview visualblocks')
                             // Переопределить набор toolbar
@@ -52,16 +66,8 @@ class PostResource extends Resource
                             // Переопределение текущей локали
                             ->locale('ru')
                             ->hideOnIndex(),
-                        Enum::make('Статус', 'status')
-                            ->attach(StatusEnum::class),
-                        Date::make('Дата создания', 'created_at')
-                            ->sortable(),
-                        Date::make('Дата создания', 'updated_at')
-                            ->sortable()
-                            ->hideOnIndex(),
-
                     ])
-                ])
+                ])->columnSpan(6)
             ])
         ];
 	}

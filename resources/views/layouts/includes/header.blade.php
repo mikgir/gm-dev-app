@@ -13,7 +13,7 @@
                 <a href="{{route('projects')}}" class="item__link">PORTFOLIO</a>
             </li>
             <li class="menu__item link3">
-                <a href="#" class="item__link">BLOG</a>
+                <a href="{{route('posts')}}" class="item__link">BLOG</a>
             </li>
             <li class="menu__item link4">
                 <a href="{{route('contact')}}" class="item__link">CONTACTS</a>
@@ -44,10 +44,6 @@
                                     <i class="fa-solid fa-right-to-bracket"></i>
                                 </a>
                             </li>
-
-{{--                            @if (Route::has('register'))--}}
-{{--                                <a href="{{ route('register') }}" class="">Register</a>--}}
-{{--                            @endif--}}
                         @endauth
                 @endif
         </ul>

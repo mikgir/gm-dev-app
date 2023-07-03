@@ -15,10 +15,10 @@
                 <div class="section__box contact__box">
                     <div class="row row-cols-2"></div>
                     <div class="contact__text col-lg-8 mt-lg-5">
-                        <p class="text-center" style="font-size: 1.5rem">You can register via<br>social networks.</p>
-                        <div class="text-center" style="font-size: 2rem">
-                            <a href="#"><i class="fa fa-vk"></i></a>
-                            <a href="#"><i class="fa fa-github"></i></a>
+                        <p class="text-center" style="font-size: 1rem">You can register via<br>social networks.</p>
+                        <div class="text-center" style="font-size: 1.5rem">
+                            <a href="#"><i class="fab fa-vk"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-8">
@@ -30,7 +30,7 @@
                                         <div class="col-4">
                                             <div class="form-group">
                                                 <div>
-                                                    <label for="avatar" class="">{{ __('Аватар (опционально)') }}</label>
+                                                    <label for="avatar" class="">{{ __('Avatar (optional)') }}</label>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <input id="avatar" type="file" class="form-control" name="avatar">

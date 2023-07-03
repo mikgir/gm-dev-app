@@ -43,7 +43,10 @@ class MoonShineServiceProvider extends ServiceProvider
                     ->icon('heroicons.computer-desktop'),
                 MenuItem::make('Посты', new PostResource())
                     ->icon('heroicons.photo')
-            ])->icon('heroicons.newspaper')
+            ])->icon('heroicons.newspaper'),
+            MenuGroup::make('Заказы', [
+
+            ])->icon('heroicons.clipboard-document-list')
 
         ]);
     }

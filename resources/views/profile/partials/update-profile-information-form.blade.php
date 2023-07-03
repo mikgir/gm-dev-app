@@ -1,4 +1,4 @@
-<div class="my-3 bg-transparent">
+<div class="bg-transparent">
     <div>
         <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
             {{ __('Profile Information') }}
@@ -13,20 +13,20 @@
         @csrf
     </form>
 
-    <form method="post" action="{{ route('profile.update', Auth::id()) }}" class="form-group bg-transparent">
+    <form method="post" action="{{ route('profile.update', Auth::id()) }}" class="form-group contact__form">
         @csrf
         @method('patch')
-        <div class="my-3">
-            <label for="avatar" class="">{{ __('Аватар (опционально)') }}</label>
+        <div class="mb-3">
+            <label for="avatar" class="form-label">{{ __('Avatar (optional)') }}</label>
             <input id="avatar" type="file" class="form-control" name="avatar">
         </div>
-        <div>
+        <div class="mb-3">
             <x-input-label for="name" :value="__('Name')" />
             <x-text-input id="name" name="name" type="text" class="form-control" :value="old('name', $user->name)" required autofocus autocomplete="name" />
             <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
 
-        <div>
+        <div class="mb-3">
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" name="email" type="email" class="form-control" :value="old('email', $user->email)" required autocomplete="username" />
             <x-input-error class="mt-2" :messages="$errors->get('email')" />

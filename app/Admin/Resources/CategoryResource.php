@@ -10,6 +10,7 @@ use MoonShine\Decorations\Column;
 use MoonShine\Decorations\Grid;
 use MoonShine\Fields\Date;
 use MoonShine\Fields\Text;
+use MoonShine\Fields\Textarea;
 use MoonShine\Resources\Resource;
 use MoonShine\Fields\ID;
 use MoonShine\Actions\FiltersAction;
@@ -33,6 +34,8 @@ class CategoryResource extends Resource
                     Block::make('Информация', [
                         Text::make('Наименование', 'name')
                             ->sortable(),
+                        Textarea::make('Описание', 'description')
+                            ->hideOnIndex(),
                         Date::make('Дата создания', 'created_at')
                             ->sortable(),
                         Date::make('Дата изменения', 'updated_at')

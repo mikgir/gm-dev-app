@@ -8,8 +8,6 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="{{asset('build/src/assets/fonts/JosefinSans-Regular.ttf')}}">
-    <link rel="stylesheet" href="{{asset('build/src/assets/fonts/ReenieBeanie-Regular.ttf')}}">
     <link rel="stylesheet" href="https://unpkg.com/claymorphism-css/dist/clay.css"/>
 
 

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->increments('id');
             $table->integer('order')->default(1);
             $table->string('name');
+            $table->text('description');
             $table->timestamps();
         });
     }
